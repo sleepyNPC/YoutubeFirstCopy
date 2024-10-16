@@ -1,0 +1,222 @@
+.header-container{
+    /* positioning properties: */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+}
+.header{
+  height: 55px;
+  background-color: #101010;
+  /* flexbox properties: */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.hamburger-menu {
+  height: 20px;
+  margin-left: 24px;
+  margin-right: 29px;
+}
+.yt-logo {
+  height: 20px;
+}
+
+.middle-section{
+  flex: 1;
+  margin-left: 60px;
+  margin-right: 35px;
+  max-width: 550px; /* this means that the middle section width can flex upto maximum of 300px */
+  display: flex;
+  align-items: center;
+}
+.search-bar{
+  flex: 1;
+  height: 34px;
+  width: 0;/* so that it fully shrinks when resized */
+  padding-left: 10px;
+  font-size: 16px;
+  background-color: #101010;
+  color: white;
+  /* single line border properties:
+     border: width style color */
+  border: 0.7px solid rgb(48, 48, 48);
+  /* somehow this format made the border sleeker */
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  /*box-shadow: inset 1px 2px 3px rgba(255, 255, 255, 0.05);*/
+}
+.search-bar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 15px;
+}
+.search-button{
+  background-color: rgba(255, 255, 255, 0.08);
+  height: 37px;
+  width: 62px;
+  border: solid;
+  border-width: 0.7px;
+  border-color: rgba(48, 48, 48);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: 0px;
+  margin-left: -1;
+}
+.search-button,
+.voice-search-button, 
+.upload-icon-container{
+  display: flex;
+  justify-content: center;/* horizontally align to center */
+  align-items: center; /* vertically align to center */
+  position: relative; /* outer container element */
+  cursor: pointer;
+}
+.search-button .toolTip,
+.voice-search-button .toolTip, 
+.upload-icon-container .toolTip { 
+  position: absolute; /* inner element w.r.t. outer element */
+  background-color: rgba(89, 87, 87, 0.9);
+  color: rgba(255,255,255,0.9);
+  font-family: Roboto;
+  font-size: 11.5px;
+  font-weight: 300;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  bottom: -55px;
+  opacity: 0; /* for hover functionality */
+  transition: opacity 0.2s;
+  pointer-events: none;/* when mouse hovers over this tooltip, nothing should happen */
+  white-space: nowrap;/* prevents whitespace from wrapping */
+}
+.search-button:hover .toolTip,
+.voice-search-button:hover .toolTip, 
+.upload-icon-container:hover .toolTip {
+  opacity: 1;
+}
+.search-icon{
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.88;
+}
+
+.voice-search-button{
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  margin-left: 15px;
+  border: none;
+}
+.voice-search-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.voice-search-icon{
+  height: 21px;
+  object-fit: contain;
+  padding-right: 0px;
+  padding-top: 3px;
+  opacity: 0.88;
+}
+
+.right-section{
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.upload-icon{
+  height: 23px;
+  object-fit: contain;
+  opacity: 0.88;
+}
+
+.notification-icon{
+  height: 23px;
+  object-fit: contain;
+  opacity: 0.88;
+}
+.notification-icon-container {
+  position:relative;
+  cursor: pointer;
+}
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  background-color: crimson;
+  color: white;
+  font-family: Roboto;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: solid;
+  border-radius: 10px;
+  border-width: 1.5px;
+  border-color: #101010;
+}
+
+.current-user-pfp{
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  border: none;
+}
+
+/* recommendation bar */
+.recommendation-tab-bar-container {
+  /* used to prevent weird indentation issues w.r.t. video grid */
+  position: relative;
+  left: 72px;
+  z-index: 200;
+  background-color: #101010;
+}
+.recommendation-tab-bar{
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  /* for horizontal scroll */
+  overflow: auto;
+  white-space: nowrap;
+  /* to prevent spillover on the left side
+     onto sidebar elements */
+  position: relative;
+  left: 111px;
+}
+.recommendation-tab-bar::-webkit-scrollbar {
+  display: none; /* hides the scrollbar */
+}
+.recommendation-tab-button{
+  /* single-line padding: top right bottom left */
+  padding: 8px 12px 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  background-color: rgba(255,255,255, 0.1);
+  color: white;
+  transition: background-color 0.2s;
+  margin-right: 10px;
+}
+.recommendation-tab-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>YouTube firstCopy</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+
+  <body> 
+
+    <header class = "header-container">
+      <div class = "header">
+        <div class = "left-section">
+          <img class = "hamburger-menu" src = "icons/hamburger-menu.svg">
+          <img class = "yt-logo" src = "icons/yt-logo.png">
+        </div>
+        <div class = "middle-section">
+          <input class = "search-bar" type = "text" placeholder = "Search">
+          <button class = "search-button">
+            <img class = "search-icon" src = "icons/search-icon.svg">
+            <div class = "toolTip">Search</div>
+          </button>
+          <button class = "voice-search-button">
+            <img class = "voice-search-icon" src = "icons/voice-search.svg">
+            <div class = "toolTip">Search with your voice</div>
+          </button>
+        </div>
+        <div class = "right-section">
+          <div class = "upload-icon-container">
+            <img class = "upload-icon" src = "icons/upload.svg">
+            <div class = "toolTip">Upload</div>
+          </div>
+          <div class = "notification-icon-container">
+            <img class = "notification-icon" src = "icons/notification.svg">
+            <div class = "notification-count">7</div>
+          </div>
+          <img class = "current-user-pfp" src = "icons/user-pfp.JPG">
+        </div>
+      </div> 
+
+      <div class = "recommendation-tab-bar-container">
+        <div class = "recommendation-tab-bar" style = "margin-left: -92px;">
+          <button class = "recommendation-tab-button" style = "background-color: white; color: black;">
+            All
+          </button>
+          <button class = "recommendation-tab-button">
+            Computer Programming
+          </button>
+          <button class = "recommendation-tab-button">
+            Thoughts
+          </button>
+          <button class = "recommendation-tab-button">
+            Study Skills
+          </button>
+          <button class = "recommendation-tab-button">
+            Ideas
+          </button>
+          <button class = "recommendation-tab-button">
+            Passion
+          </button>
+          <button class = "recommendation-tab-button">
+            UI Interface Design
+          </button>
+          <button class = "recommendation-tab-button">
+            APIs
+          </button>
+          <button class = "recommendation-tab-button">
+            Goals
+          </button>
+          <button class = "recommendation-tab-button">
+            Recently Uploaded
+          </button>
+          <button class = "recommendation-tab-button">
+            New to you
+          </button>
+        </div>
+      </div>  
+    </header>
+    <nav class = "sidebar">
+      <div class = "sidebar-links">
+        <img src = "icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class = "sidebar-links">
+        <img src = "icons/shorts.svg">
+        <div>Shorts</div>
+      </div>
+      <div class = "sidebar-links">
+        <img src = "icons/subscriptions.png">
+        <div>Subscriptions</div>
+      </div>
+      <div class = "sidebar-links">
+        <img src = "icons/youtube-music.svg">
+        <div>Youtube Music</div>
+      </div>
+      <div class = "sidebar-links">
+        <img src = "icons/you.png">
+        <div>You</div>
+      </div>
+    </nav>
+   <main>
+    <section class = "vid-page-grid">  
+      <div class = "vid-preview">
+        <div class = "thumbnail-row-div"> <!-- row 1: thumbnail -->
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-1.webp">
+          <div class = "vid-time">14:20</div> 
+        </div>
+        <div class = "vid-info-grid"> <!-- row2: description -->  
+          <div class = "channel-pfp-div"> <!--pfp column-->
+            <img class = "channel-pfp" src = "../channel logo/channel-1.jpeg">
+          </div>
+          <div class = "vid-info">
+            <p class = "video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class = "vid-author">
+              Marques Brownlee
+            </p>
+            <p class = "vid-stats">
+              3.4M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class = "vid-preview">
+        <div class = "thumbnail-row-div"> <!-- row 1: thumbnail -->
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-2.webp"> 
+          <div class = "vid-time">8:22</div>
+        </div>
+        <div class = "vid-info-grid"> <!-- row2: description -->  
+          <div class = "channel-pfp-div"> <!--pfp column-->
+            <img class = "channel-pfp" src = "../channel logo/channel-2.jpeg">
+          </div>
+          <div class = "vid-info">
+            <p class = "video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class = "vid-author">
+              Markiplier
+            </p>
+          <p class = "vid-stats">
+            19M views &#183; 7 years ago
+          </p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-4.webp"> 
+          <div class = "vid-time">22:09</div>
+        </div>
+        <div class = "vid-info-grid">  
+          <div class = "channel-pfp-div">
+            <img class = "channel-pfp" src = "../channel logo/channel-4.jpeg">
+          </div>
+          <div class = "vid-info">
+            <p class = "video-title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+            <p class = "vid-author">
+              Veritasium
+            </p>
+            <p class = "vid-stats">
+              18M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+        <img class = "thumbnail" src = "../thumbnails/thumbnail-5.webp"> 
+        <div class = "vid-time">11:17</div>
+      </div>
+      <div class = "vid-info-grid">  
+        <div class = "channel-pfp-div">
+          <img class = "channel-pfp" src = "../channel logo/channel-5.jpeg">
+        </div>
+        <div class = "vid-info">
+          <p class = "video-title">
+            Kadane's Algorithm to Maximum Sum Subarray Problem
+          </p>
+          <p class = "vid-author">
+            CS Dojo
+          </p>
+          <p class = "vid-stats">
+            519K views &#183; 8 years ago
+          </p>
+        </div>
+      </div>
+      </div>
+
+      <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-6.webp"> 
+          <div class = "vid-time">19:59</div>
+        </div>
+        <div class = "vid-info-grid">
+          <div class = "channel-pfp-div">
+            <img class = "channel-pfp" src = "../channel logo/channel-6.jpeg">
+          </div>
+          <div class = "vid-info">
+            <p class = "video-title">
+            Anything You Can Fit In The Circle I'll Pay For
+            </p>
+            <p class = "vid-author">
+              MrBeast
+            </p>
+            <p class = "vid-stats">
+              141M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+        <img class = "thumbnail" src = "../thumbnails/thumbnail-7.webp"> 
+        <div class = "vid-time">10:13</div>
+        </div>
+      <div class = "vid-info-grid">
+        <div class = "channel-pfp-div">
+          <img class = "channel-pfp" src = "../channel logo/channel-7.jpeg">
+        </div>
+        <div class = "vid-info">
+          <p class = "video-title">
+            Why Planes Don't Fly Over Tibet
+          </p>
+          <p class = "vid-author">
+            RealLifeLore
+          </p>
+          <p class = "vid-stats">
+            6.6M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+      </div>
+
+      <div class = "vid-preview">
+          <div class = "thumbnail-row-div">
+            <img class = "thumbnail" src = "../thumbnails/thumbnail-8.webp"> 
+            <div class = "vid-time">7:12</div>
+          </div>
+        <div class = "vid-info-grid">  
+          <div class = "channel-pfp-div">
+            <img class = "channel-pfp" src = "../channel logo/channel-8.jpeg">
+          </div>
+          <div class = "vid-info">
+            <p class = "video-title">
+              Inside The World's Biggest Passenger Plane
+            </p>
+            <p class = "vid-author">
+              Tech Vision
+            </p>
+            <p class = "vid-stats">
+              3.7M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-9.webp"> 
+          <div class = "vid-time">13:17</div>
+        </div>
+        <div class = "vid-info-grid">  
+        <div class = "channel-pfp-div">
+          <img class = "channel-pfp" src = "../channel logo/channel-9.jpeg">
+        </div>
+        <div class = "vid-info">
+          <p class = "video-title">
+            The SECRET to Super Human STRENGTH
+          </p>
+          <p class = "vid-author">
+            ThenX
+          </p>
+          <p class = "vid-stats">
+            20M views &#183; 6 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-10.webp"> 
+          <div class = "vid-time">7:53</div>
+        </div>
+        <div class = "vid-info-grid">  
+        <div class = "channel-pfp-div">
+          <img class = "channel-pfp" src = "../channel logo/channel-10.jpeg">
+        </div>
+        <div class = "vid-info">
+          <p class = "video-title">
+            How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+          </p>
+          <p class = "vid-author">
+            Business Insider
+          </p>
+          <p class = "vid-stats">
+            14M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-11.webp"> 
+          <div class = "vid-time">4:10</div>
+        </div>
+        <div class = "vid-info-grid">  
+        <div class = "channel-pfp-div">
+          <img class = "channel-pfp" src = "../channel logo/channel-11.jpeg">
+        </div>
+        <div class = "vid-info">
+          <p class = "video-title">
+            Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+          </p>
+          <p class = "vid-author">
+            Destination Tips
+          </p>
+          <p class = "vid-stats">
+            3M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-12.webp"> 
+          <div class = "vid-time">4:51</div>
+        </div>
+        <div class = "vid-info-grid">  
+        <div class = "channel-pfp-div">
+          <img class = "channel-pfp" src = "../channel logo/channel-12.jpeg">
+        </div>
+        <div class = "vid-info">
+          <p class = "video-title">
+            What would happen if you didn't drink water? - Mia Nacamulli
+          </p>
+          <p class = "vid-author">
+            Ted-Ed
+          </p>
+          <p class = "vid-stats">
+            12M views &#183; 8 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class = "vid-preview">
+        <div class = "thumbnail-row-div">
+          <img class = "thumbnail" src = "../thumbnails/thumbnail-3.webp"> 
+          <div class = "vid-time">9:13</div>
+        </div>
+        <div class = "vid-info-grid">  
+        <div class = "channel-pfp-div" style = "background-color: beige;">
+          <img class = "channel-pfp" src = "../channel logo/channel-3.jpeg">
+        </div>
+        <div class = "vid-info" style = "background-color: beige;">
+          <p class = "video-title"  style = "color: black;">
+            Dumb woman reacts to dumb shit
+          </p>
+          <p class = "vid-author">
+            Not SSSniperWolf [anomaly to show grids]
+          </p>
+          <p class = "vid-stats">
+            12M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    </section>
+   </main> 
+
+  </body>
+</html>
+
+
+<!-- finished HTML CSS on august 1st, 2024 -->

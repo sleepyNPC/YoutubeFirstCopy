@@ -1,0 +1,29 @@
+p {
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+body {
+  /* inherited styles:  */
+  position: absolute;
+  top: 135px;
+  left: 87px;
+  z-index: 50;
+  background-color: #101010;
+  height: 1100px;
+  /* inheritance example:
+    note that "p" above does not have font-family property
+    font-family is now just inherited by all text elements of the body */
+  font-family: roboto, arial;
+  color: white;
+  padding-right: 15px;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* finished HTML CSS on august 1st, 2024 */

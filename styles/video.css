@@ -1,0 +1,95 @@
+
+/* main grid for all videos */
+.vid-page-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 40px;
+  /* inheritance property:
+  text-decoration: underline; */
+}
+
+/* responsive design to adapt to screen size */
+@media (max-width: 900px) {
+  /* CSS code that activates when screen size is 600px or less */
+  .vid-page-grid {
+    grid-template-columns: 1fr 1fr; /* only 2 columns */
+  }
+}
+@media (max-width: 901px) and (min-width: 1199px) {
+  .vid-page-grid {
+    grid-template-columns: 1fr 1fr 1fr; /* only 2 columns */
+  }
+}
+@media (min-width: 1200px) {
+  .vid-page-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* whole thing made redundant by grid layout
+.vid-preview{
+  margin-right: 15px;
+  vertical-align: top;
+}
+*/
+
+/* thumbnail row div styles: */
+.thumbnail-row-div{
+  margin-bottom: 8px; 
+  position: relative;
+  z-index: 50;
+}
+.thumbnail{
+  width: 100%; /* see 7 lesson notes for more */
+  /* grid layout make this redundant: "display: block;" /* now search bar moves to different line as image occupies whole line */
+  border-radius: 12px;
+}
+.vid-time {
+  font-size: 13px;
+  font-weight: 500;
+  /* vertical-padding horizontal padding */
+  padding: 4px 4px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 7px;
+}
+
+/* video info div styles: */
+.vid-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 5px;
+}
+.channel-pfp-div{
+  /* don't need these coz grids
+  display: inline-block;
+  width: 50px;*/
+  vertical-align: top;
+  padding-left: 3px;
+}
+.channel-pfp{
+  width: 35px;
+  border-radius: 40px;
+}
+.vid-info{
+  display: inline-block;
+}
+.video-title{
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+.vid-author,
+.vid-stats{
+  font-size: 13px;
+  color: rgb(170, 170, 170);
+}
+.vid-author{
+  margin-bottom: 4px;
+}
